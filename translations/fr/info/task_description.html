@@ -1,0 +1,62 @@
+<p>
+    Notre trio de robots veut jouer au golf,
+    mais ce sont les rois du green et ils manient le club comme des dieux : 
+    la balle est dans le trou en un coup.
+    Alors ils ont changé les règles du jeu pour pimenter un peu les parties.
+    Maintenant, ils doivent mettre la balle dans les trous dans un ordre spécial.
+</p>
+
+<p>
+    Il y a cinq (5) trous sur le green carré de taille 10 x 10 unités.
+    On vous donne les coordonnées des trous du parcours.
+    Pour gagner, il faut trouver le parcours le plus court pour mettre la balle dans tous le trous, et 
+    votre fonction doit retourner la longueur de ce parcours.
+    Le parcours commence au point (0, 0) et peut se terminer par n'importe quel trou.
+    Le résultat sera testé avec une précision de &plusmn;0.01.
+</p>
+
+<p style="text-align: center;">
+    <img title="golf" src="{{MEDIA}}golf.png" alt="golf" width="360px"/>
+</p>
+<p>
+    Pour cette mission, l'objectif est de faire un code le plus court possible.
+    Plus votre code est court, plus vous gagnez de points.
+    Votre score est calculé en fonction de la longueur de votre code (nombre de carcatères):
+    un code de 350 caractères ne rapporte aucun point ;
+    chaque caractère de moins que 350 vous rapporte 1 point. Par exemple, un code de 300 caractères rapporte 50 points.
+</p>
+
+<p>
+    <strong>Input: </strong>Un ensemble (set) des coordonnées des trous. 
+    Chaque trou est représenté par ses coordonnées, comme un couple (tuple) d'entiers (int).
+</p>
+
+<p>
+    <strong>Output: </strong>La longueur du plus court parcours (float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">
+golf({(2, 2), (2, 8), (8, 8), (8, 2), (5, 5)}) == 23.31
+golf({(2, 2), (4, 4), (6, 6), (8, 8), (9, 9)}) == 12.73
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Application: </strong>
+    Il ne s'agit pas d'élégance ou de performance dans cette mision, mais des trucs et astuces de la programmation en Python,
+    qui aident à faire un code le plus court possible.
+    Cela peut aider à meilleure compréhension du fonctionnement de Python, bien que l'on ne code pas comme cela au quotidien.
+</p>
+
+
+<p>
+    <strong>Préconditions:</strong>
+    len(holes) == 5<br>
+    all(0 &lt; x &lt; 10 and 0 &lt; y &lt; 10 for x, y in holes)<br>
+    <!--all(isinstance(x, int) and isinstance(y, int) for x, y in holes) == True<br>-->
+</p>
